@@ -8,7 +8,8 @@ import { Reservation } from './entities/reservation.entity';
 @Injectable()
 export class ReservationService {
   constructor(
-    @InjectRepository(Reservation) private repository: Repository<Reservation>,
+    @InjectRepository(Reservation)
+    private repository: Repository<Reservation>,
   ) {}
 
   create(createReservationDto: CreateReservationDto) {

@@ -1,6 +1,6 @@
 version: '3.1'
 services:
-  db:
+  node_db:
     image: mysql:5.7
     volumes:
       - "./.data/db:/var/lib/mysql"

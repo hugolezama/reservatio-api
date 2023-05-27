@@ -1,0 +1,27 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateOfficeInput {
+  hostId: String!
+  locationId: Int!
+}
+
+type Mutation {
+  createOffice(officeInput: CreateOfficeInput!): Office!
+}
+
+type Office {
+  """Host ID"""
+  hostId: String!
+
+  """Location ID"""
+  locationId: Int!
+
+  """Office ID"""
+  officeId: Int!
+}
+
+type Query {
+  office: [Office!]!
+}
